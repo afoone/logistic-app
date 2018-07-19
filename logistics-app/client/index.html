@@ -63,13 +63,13 @@
   </head>
   <body ng-app="application" ng-controller="appController">
     <header>
-      <div id="left_header">Hyperledger Fabric Tuna Application</div>
-      <i id="right_header">Example Blockchain Application for Introduction to Hyperledger Fabric LFS171x</i>
+      <div id="left_header">Hyperledger Fabric - Procedencia de la oliva </div>
+      <i id="right_header">Blockchain app de ejemplo en node.js</i>
     </header>
 
     <div id="body">
       <div class="form-group">
-        <label>Query All Tuna Catches</label>
+        <label>Ver todas las olivas recogidas</label>
         <p><input id="queryAllTuna" type="submit" value="Query" class="btn btn-primary" ng-click="queryAllTuna()"></p>
       </div>
  
@@ -78,9 +78,9 @@
         <tr>
           <th>ID</th>
           <th>Timestamp</th>
-          <th>Holder</th>
-          <th>Catch Location <br>(Longitude, Latitude)</th>
-          <th>Vessel</th>
+          <th>Poseedor</th>
+          <th>Localización de la vendimia <br>(Longitude, Latitude)</th>
+          <th>Vendimiador</th>
         </tr>
 
         <tr ng-repeat="tuna in all_tuna">
@@ -93,7 +93,7 @@
       </table>
 
       <div class="form-group">
-        <label>Query a Specific Tuna Catch</label><br>
+        <label>Buscar un contenedor específico de oliva</label><br>
         <h5 style="color:red;margin-bottom:2%" id="error_query">Error: Please enter a valid Tuna Id</h5>
         
         Enter a catch number: <input id="createName" class="form-control" type="text" placeholder="Ex: 3" ng-model="tuna_id">
@@ -104,9 +104,9 @@
 
         <tr>
           <th>Timestamp</th>
-          <th>Holder</th>
-          <th>Catch Location <br>(Longitude, Latitude)</th>
-          <th>Vessel</th>
+          <th>Poseedor</th>
+          <th>Localización de la vendimia<br>(Longitude, Latitude)</th>
+          <th>Vendimiador</th>
         </tr>
 
         <tr>
@@ -121,12 +121,12 @@
         <label>Create Tuna Record</label>
         <h5 style="color:green;margin-bottom:2%" id="success_create">Success! Tx ID: {{create_tuna}}</h5>
         <br>
-        Enter catch id: <input class="form-control" type="text" placeholder="Ex: 11" ng-model="tuna.id">
-        Enter name of vessel: <input class="form-control" type="text" placeholder="Ex: 0239L" ng-model="tuna.vessel">
-        Enter longitude: <input id="createName" class="form-control" type="text" placeholder="Ex: 28.012" ng-model="tuna.longitude"> 
-        Enter latitude: <input id="createName" class="form-control" type="text" placeholder="Ex: 150.405" ng-model="tuna.latitude">
-        Enter timestamp: <input class="form-control" type="text" placeholder="Ex: 4982342301" ng-model="tuna.timestamp">
-        Enter name of holder: <input class="form-control" type="text" placeholder="Ex: Hansel" ng-model="tuna.holder">
+        Introducir el ID del contenedor: <input class="form-control" type="text" placeholder="Ex: 11" ng-model="tuna.id">
+        Introducir nombre del vendimiador: <input class="form-control" type="text" placeholder="Ex: 0239L" ng-model="tuna.vessel">
+        Introducir longitud: <input id="createName" class="form-control" type="text" placeholder="Ex: 28.012" ng-model="tuna.longitude"> 
+        Introducir latitud: <input id="createName" class="form-control" type="text" placeholder="Ex: 150.405" ng-model="tuna.latitude">
+        Introducir timestamp: <input class="form-control" type="text" placeholder="Ex: 4982342301" ng-model="tuna.timestamp">
+        Introducir el nombre del poseedor: <input class="form-control" type="text" placeholder="Ex: Hansel" ng-model="tuna.holder">
         <input id="createSubmit" type="submit" value="Create" class="btn btn-primary" ng-click="recordTuna()"> 
       </div>
 
@@ -134,8 +134,8 @@
         <label>Change Tuna Holder</label><br>
         <h5 style="color:green;margin-bottom:2%" id="success_holder">Success! Tx ID: {{change_holder}}</h5>
         <h5 style="color:red;margin-bottom:2%" id="error_holder">Error: Please enter a valid Tuna Id</h5>
-        Enter a catch id between 1 and 10: <input class="form-control" name="assetSelect" placeholder="Ex: 1" ng-model="holder.id">
-        Enter name of new holder: <input class="form-control" name="assetSelect" placeholder="Ex: Barry" ng-model="holder.name">
+        Introducir un contenedor entre el 1 y el 10: <input class="form-control" name="assetSelect" placeholder="Ex: 1" ng-model="holder.id">
+        Introduce el nombre del nuevo poseedor: <input class="form-control" name="assetSelect" placeholder="Ex: Barry" ng-model="holder.name">
         <input id="transferSubmit" type="submit" value="Change" class="btn btn-primary" ng-click="changeHolder()">
       </div>
 
