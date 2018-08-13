@@ -4,21 +4,21 @@
     "description": "Hyperledger Fabric Aplicación para procedencia de la oliva",
     "main": "server.js",
     "dependencies": {
-        "fabric-ca-client": "1.0.2",
-        "fabric-client": "1.0.2",
-        "grpc": "^1.6.0",
-        "express": "latest",
+        "angular": "^1.4.3",
         "body-parser": "latest",
         "ejs": "latest",
-        "angular": "^1.4.3"
+        "express": "latest",
+        "fabric-ca-client": "1.0.2",
+        "fabric-client": "^1.2.0",
+        "grpc": "^1.14.0"
     },
     "license": "Apache-2.0",
     "keywords": [
         "Hyperledger",
         "Fabric",
-        "Oceans",
-        "Tuna",
-        "Fishing",
+        "Andalucia",
+        "Olive",
+        "Oil",
         "Sample",
         "Application"
     ]

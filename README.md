@@ -12,7 +12,7 @@ Finalmente, el nodo validará el bloque y lo escribirá en su ledger.
 
 ## Instalando y ejecutando la aplicación
 
-Para ejecutar la aplicación necesitarás tener instalado docker en el sistema, así como node.js y para seguir las instrucciones el node package manager `npm`
+Para ejecutar la aplicación necesitarás tener instalado docker en el sistema, así como node.js y para seguir las instrucciones el node package manager `npm
 
 Para ejecutar la aplicación clonar:
 
@@ -43,7 +43,24 @@ Ahora vamos a instalar las dependencias y arrancar node.js:
 
 ```
 npm install
-npm start
+````
+
+A continuación, registramos el Admin:
+
+```
+node registerAdmin.js
+```
+Que nos dará algo parecido a esto:
+```
+node registerAdmin.js
+ Store path:/Users/kjdalsj/.hfc-key-store
+Successfully enrolled admin user "admin"
+Assigned the admin user to the fabric client ::{"name":"admin","mspid":"Org1MSP","roles":null,"affiliation":"","enrollmentSecret":"","enrollment":{"signingIdentity":"bc301f2bfe5d0559c401f9aa0f713908j18f80ca38d59cca9f806e53341b804a81","identity":{"certificate":"-----BEGIN CERTIFICATE-----\nMIICAjCCAaigAwIBAgIUTsqBFrLyca8UOEiuOGblhVkMLfwwCgYIKoZIzj0EAwIw\nczELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNh\nbiBGcmFuY2lzY28xGTAXBgNVBAoTEG9yZzEuZXhhbXBsZS5jb20xHDAaBgNVBAMT\nE2NhLm9yZzEuZXhhbXBsZS5jb20wHhcadksjf0934zMTAyOTAwWhcNMTkwODEzMTAz\nNDAwWjAhMQ8wDQYDVQQLEwZjbGLlbnQxDjAMBgNVBAMTBWFkbWluMFkwEwYHKoZI\nzj0CAQYIKoZIzj0DAQcDQgAE+oPa26+SX6ARosVQY4MIUmCPmYd7ypgYsRZp/hyL\noc2S09bD/wo+Gj47/9R1msOowZoDcXn9rm/DTm496pJhbKNsMGowDgYDVR0PAQH/\nBAQDAgeAMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFDEt+0WErWTZ/WnlxDCXpgQ6\nFZKHMCsGA1UdIwQkMCKAIEI5qg3NdtruuLoM2nAYUdFFBNMarRst3dusalc2Xkl8\nMAoGCCqGSM49BAMCA0gAMEUCIQCr6caA47C6D3zF3BsF8ptgYNL+p/q+XiztIBlw\nuhZTYgIgEA5qeLDNB1uQ02nxPyaQ+Xl3lfVBYi5Xqol7Ds2XiU0=\n-----END CERTIFICATE-----\n"}}}
+```
+
+
+node registerUser.js
+node server.js
 ```
 
 
