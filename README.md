@@ -58,8 +58,21 @@ Successfully enrolled admin user "admin"
 Assigned the admin user to the fabric client ::{"name":"admin","mspid":"Org1MSP","roles":null,"affiliation":"","enrollmentSecret":"","enrollment":{"signingIdentity":"bc301f2bfe5d0559c401f9aa0f713908j18f80ca38d59cca9f806e53341b804a81","identity":{"certificate":"-----BEGIN CERTIFICATE-----\nMIICAjCCAaigAwIBAgIUTsqBFrLyca8UOEiuOGblhVkMLfwwCgYIKoZIzj0EAwIw\nczELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNh\nbiBGcmFuY2lzY28xGTAXBgNVBAoTEG9yZzEuZXhhbXBsZS5jb20xHDAaBgNVBAMT\nE2NhLm9yZzEuZXhhbXBsZS5jb20wHhcadksjf0934zMTAyOTAwWhcNMTkwODEzMTAz\nNDAwWjAhMQ8wDQYDVQQLEwZjbGLlbnQxDjAMBgNVBAMTBWFkbWluMFkwEwYHKoZI\nzj0CAQYIKoZIzj0DAQcDQgAE+oPa26+SX6ARosVQY4MIUmCPmYd7ypgYsRZp/hyL\noc2S09bD/wo+Gj47/9R1msOowZoDcXn9rm/DTm496pJhbKNsMGowDgYDVR0PAQH/\nBAQDAgeAMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFDEt+0WErWTZ/WnlxDCXpgQ6\nFZKHMCsGA1UdIwQkMCKAIEI5qg3NdtruuLoM2nAYUdFFBNMarRst3dusalc2Xkl8\nMAoGCCqGSM49BAMCA0gAMEUCIQCr6caA47C6D3zF3BsF8ptgYNL+p/q+XiztIBlw\nuhZTYgIgEA5qeLDNB1uQ02nxPyaQ+Xl3lfVBYi5Xqol7Ds2XiU0=\n-----END CERTIFICATE-----\n"}}}
 ```
 
+Registramos ahora un usuario de la red de fabric
 
 node registerUser.js
+
+```
+Store path:/Users/sfsdfs/.hfc-key-store
+Successfully loaded admin from persistence
+Successfully registered user1 - secret:82397hdsk
+Successfully enrolled member user "user1"
+User1 was successfully registered and enrolled and is ready to intreact with the fabric network
+```
+
+Y ejecutamos el servidor de node para acceder a la aplicación:
+
+```
 node server.js
 ```
 
